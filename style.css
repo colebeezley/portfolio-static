@@ -1,0 +1,20 @@
+body {
+    background-color: #1f1f1f;  
+}
+p, h2, h3, a, td, li, label {
+    color: #EDEDED;
+}
+a:active, a:hover, a:visited {
+    color: #DA0037;
+    text-decoration: none;
+}
+
+/* CORE */
+
+table {
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+a {
+    text-decoration: none;
+}
