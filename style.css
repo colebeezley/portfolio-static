@@ -1,11 +1,16 @@
+
+
 body {
-    background-color: #1f1f1f;  
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 p, h2, h3, a, td, li, label {
-    color: #EDEDED;
+    color: #000000;
 }
 a:active, a:hover, a:visited {
-    color: #DA0037;
+    color: #FF1E56;
     text-decoration: none;
 }
 
@@ -17,4 +22,17 @@ table {
 }
 a {
     text-decoration: none;
+}
+img {
+    border-radius: 50px;
+}
+hr {
+    border-style: none;
+    border-top-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+footer {
+    padding-top: 2rem;
+
 }
