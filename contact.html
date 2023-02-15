@@ -5,15 +5,30 @@
     <!-- The above meta tag keeps the page refreshed with changes -->
 </head>
 <body>
-    <h2>
+    <h4>
         Here is where I'm best reached.
-    </h2>
+    </h4>
     <ul>
-        <li>Email: cdbbeezley@gmail.com</li>
+        <li>Email: <a href="mailto:cdbbeezley@gmail.com" target="_blank">cdbbeezley@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/cole-beezley-6853271b5/" target="_blank">LinkedIn</a></li>
         <li><a href="https://www.github.com/onodeloc" target="_blank">GitHub</a></li>
     </ul>
-    <br>
+    <hr>
+    <form action="mailto:cdbbeezley@gmail.com" method="post" enctype="text/plain" target="_blank">
+        <p>Contact me:</p>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe">
+        <br>
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Your message here." rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit" name="">
+    </form>
+    <hr>
     <footer>
         <a href="./index.html">Back</a>
     </footer>
