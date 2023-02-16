@@ -7,6 +7,8 @@ body {
     overflow-y: scroll; 
     overflow-x: hidden;  
     height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -21,10 +23,10 @@ a:active, a:hover {
 /* CORE */
 nav {
     height: 40px;
-    width: 400px; max-width: 40%; min-width: 180px;
+    width: 400px; max-width: 40%; min-width: 250px;
     border-radius: 20px; border: solid; border-width: 1px;
     position: fixed;
-    margin: 2% auto;
+    margin: 2vh auto;
     left: 0;
     right: 0;
     text-align: center;
@@ -55,16 +57,19 @@ footer {
 /* CLASS */
 
 .title {
+    padding-top: 10vh;
+    font-size: 170%;
 }
 .intro {
     background-image: url("./assets/mountains.jpg");
-    height: 70vh;
+    height: 90vh;
     background-size: cover;
     margin: 0;
-    padding-top: 20%;
+    padding-top: 30vh;
     text-align: center;
     border-bottom: solid;
     border-bottom-width: 5px;
+    font-size: 130%;
 }
 
 /* ID */
