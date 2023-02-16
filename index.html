@@ -13,7 +13,7 @@
 <body>
     <nav>
         <ul id="nav_list">
-            <li class="curr_nav active"><a href="#home">Home</a></li>
+            <li class="curr_nav active"><a href="#">Home</a></li>
             <li class="curr_nav"><a href="#about">About</a></li>
             <li class="curr_nav"><a href="#projects">Projects</a></li>
             <li class="curr_nav"><a href="#contact">Contact</a></li>
@@ -25,119 +25,35 @@
         <a href="#about" id="arrows-href"><img src="./assets/arrows.png" alt="arrows-icon" id="arrows-icon" /></a>
     </section>
     <div class="main">
-        <section class="about" id="about">
-            <img src="./assets/stack.png" alt="about-me-icon" />
-            <h3>About</h3>
-            <p>Hi there, my name is Cole Beezley!</p>
-            <p>I'm a Support Representative that greatly enjoys coding and fullstack development in my freetime.</p>
-            <p>I have a Bacheleor's in Computer Science, and I'm always looking to improve my skills.</p>
-            <p>Here are some of the projects I'm working on!</p>
+        <section class="description" id="about">
+            <img src="./assets/Headshot2.jpg" alt="about-me-icon" id="about-me-icon" />
+            <div class="description-box">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis eros id tincidunt facilisis.
+                    Morbi lacinia ultrices magna, sed aliquam lacus condimentum eget. Mauris facilisis purus velit,
+                    mollis dapibus felis ornare id. Proin metus ipsum, laoreet vel ultricies at, tempus in dui. Fusce ut
+                    efficitur odio, ut commodo lorem. Sed et vehicula sapien.</p>
+            </div>
         </section>
-        <section class="projects" id="projects">
+        <section class="description" id="projects">
             <img src="./assets/projects.png" alt="projects-icon" />
             <h3>Projects</h3>
-            <table id="projects_table">
-                <tbody>
-                    <tr>
-                        <td>Project1</td>
-                        <td>Developed Portfolio website</td>
-                    </tr>
-                    <tr>
-                        <td>Project2</td>
-                        <td>Implemented rain-based psychology</td>
-                    </tr>
-                    <tr>
-                        <td>Project3</td>
-                        <td>Cured all diseases known to mankind</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec congue lectus. Nunc vel luctus ex.
+                Aenean ullamcorper accumsan orci, ut scelerisque magna ornare eu. Nunc commodo nisi sit amet varius
+                facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Aliquam sodales facilisis venenatis</p>
         </section>
-        <section id="skills" id="skills">
-            <img src="./assets/skills.png" alt="skills-icon" />
-            <h3>Skills</h3>
-            <table>
-                <thead>
-                    <th>Languages</th>
-                    <th>Tools</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <table id="languages_table" cellspacing="5">
-                                <tbody>
-                                    <tr>
-                                        <td>Python</td>
-                                        <td>★★★★☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Java</td>
-                                        <td>★★★☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>C++</td>
-                                        <td>★★☆☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>JavaScript</td>
-                                        <td>★★★☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>HTML</td>
-                                        <td>★★★☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSS</td>
-                                        <td>★★☆☆☆</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td>
-                            <table id="skills_table" cellspacing="5">
-                                <tbody>
-                                    <tr>
-                                        <td>React</td>
-                                        <td>★★★☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>React Native</td>
-                                        <td>★★☆☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Node.js</td>
-                                        <td>★★★☆☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Figma</td>
-                                        <td>★★★★☆</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Linear</td>
-                                        <td>★★★★★</td>
-                                    </tr>
-                                    <tr>
-                                        <td><br></td>
-                                        <td><br></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="contact" id="contact">
-            <img src="./assets/contact.png" alt="contact-icon" />
+        <hr class="hr_dots">
+        <section class="description" id="contact">
             <form action="mailto:cdbbeezley@gmail.com" method="post" enctype="text/plain" target="_blank">
-                <p>Contact me:</p>
+                <h2>Contact me!</h2>
                 <label for="name">Your name:</label>
                 <input type="text" id="name" name="name" placeholder="John Doe">
                 <br>
                 <label for="email">Your email:</label>
                 <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
                 <br>
-                <label for="message">Message:</label>
+                <!-- <label for="message">Message:</label> -->
                 <br>
                 <textarea id="message" name="message" placeholder="Your message here." rows="10" cols="30"></textarea>
                 <br>
@@ -146,8 +62,8 @@
         </section>
         <footer>
             <ul class="footer_list">
-                <li><a href="mailto:cdbbeezley@gmail.com" target="_blank">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/cole-beezley-6853271b5/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:cdbbeezley@gmail.com" target="_blank">Email</a> •</li>
+                <li><a href="https://www.linkedin.com/in/cole-beezley-6853271b5/" target="_blank">LinkedIn</a> •</li>
                 <li><a href="https://www.github.com/onodeloc" target="_blank">GitHub</a></li>
             </ul>
             <p class="footer_p">© 2023 Cole Beezley</p>

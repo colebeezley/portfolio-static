@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #d4efff;
     margin: 0px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     -ms-overflow-style: none;
@@ -27,12 +27,14 @@ a,
 td,
 label,
 em,
-th {
+th,
+li {
     color: #3a7895;
 }
 
 .main {
-    background: linear-gradient(to left, #6ca7bd, #f3fbff);
+    margin: 0;
+    padding: 0;
 }
 
 /* CORE */
@@ -82,10 +84,14 @@ ul {
 }
 
 section {
-    padding-top: 2em;
-    width: 40%;
+    /* padding-top: 2em; */
+    width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
+    margin-top: 2em;
     font-size: 150%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 input,
@@ -95,8 +101,19 @@ textarea {
 }
 
 img {
-    width: 150px;
+    width: 250px;
     max-width: 35%;
+}
+input {
+    margin: .5rem auto;
+}
+footer {
+    background-color: #80b9d4;
+    margin: 0;
+    padding: 100px auto;
+}
+footer p {
+    margin-bottom: 0;
 }
 
 /* CLASS */
@@ -108,6 +125,7 @@ img {
 
 .intro {
     width: 100%;
+    max-width: 100%;
     background-image: url("./assets/mountains.jpg");
     background-size: cover;
     background-position: center;
@@ -125,11 +143,40 @@ img {
     color: #3a7895;
 }
 
-.footer_list {}
-
-.footer_p {
-    padding: 0;
+.description img {
+    float: left;
+    margin-right: 5%;
+}
+#projects img {
+    float: right;
+    margin-right: 0px;
+    margin-left: 5%;
+}
+.description h3 {
+    /* text-align: center; */
     margin: 0;
+}
+.description p {
+    /* margin: 0;
+    padding: 0; */
+}
+#about-me-icon {
+    border-radius: 100%;
+}
+.hr_dots {
+    color: gray;
+    position: relative;
+    margin: 5rem auto;
+    border: none;
+    border-top: dotted;
+    border-width: 15px;
+    width: 10%;
+}
+#contact {
+    text-align: center;
+}
+.footer_list li {
+    display: inline-block;
 }
 
 /* ID */
@@ -168,7 +215,7 @@ img {
     width: 40px;
     min-width: 2%;
     filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
-    animation: 5s fadeIn;
+    animation: 3s fadeIn;
     opacity: .7;
 }
 #arrows-href {
