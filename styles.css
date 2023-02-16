@@ -16,12 +16,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 p, h2, h3, a, td, label, em, th {
-    color: #000000;
-}
-a:active, a:hover {
+    color: #3a7895;
 }
 .main {
-    background: linear-gradient(to left, #8bc7e3, #ebfdff);
+    background: linear-gradient(to left, #6ca7bd, #f3fbff);
 }
 
 /* CORE */
@@ -45,9 +43,6 @@ table {
 a {
     text-decoration: none;
 }
-img {
-    border-radius: 50px;
-}
 hr {
     border-style: none;
     border-top-style: solid;
@@ -67,10 +62,16 @@ section {
     padding-top: 2em;
     width: 40%;
     margin: 0 auto;
+    font-size: 150%;
+
 }
 input, textarea {
     font-family: inherit;
     font-size: inherit;
+}
+img {
+    width: 150px;
+    max-width: 35%;
 }
 
 /* CLASS */
@@ -115,14 +116,16 @@ input, textarea {
 #nav_list li {
     flex-grow: 1;
     flex-basis: 0;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
 }
 #nav_list li:active, #nav_list li:hover {
     border: solid;
-    border-width: 1px;
+    border-width: 0px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
 }
-#nav_list a {
+#nav_list li a {
+    padding: .8vh 1vw;
+    /* padding is approximation */
     color: rgb(0, 0, 0);
 }
