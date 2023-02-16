@@ -1,4 +1,5 @@
 /* DEFAULT */
+
 html {
     scroll-behavior: smooth;
 }
@@ -160,14 +161,13 @@ footer p {
     margin: 0;
 }
 .description p {
-    /* margin: 0;
-    padding: 0; */
+    line-height: 1.5;
 }
 #about-me-icon {
     border-radius: 100%;
 }
 .hr_dots {
-    color: rgb(164, 164, 164);
+    color: rgb(188, 188, 188);
     position: relative;
     margin: 5rem auto;
     border: none;
@@ -177,9 +177,6 @@ footer p {
 }
 #contact {
     text-align: center;
-}
-.contact_list li {
-    display: inline;
 }
 
 /* ID */
@@ -234,16 +231,28 @@ footer p {
     margin-top: 5rem;
 }
 #contact ul {
-    display: flex;
-    justify-content: center;
+    display: inline-block
 }
 #contact img {
-    width: 100px;
-    max-width: 50%;
-    margin: 0 2rem;
+    width: 150px;
+    max-width: 15%;
     filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
 }
-
+#contact img:hover {
+    filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(150%) contrast(92%);
+}
+.contact_list {
+    text-align: center;
+}
+.contact_list li {
+    break-inside: avoid;
+    display: inline;
+    margin: 0 2vw;
+}
+.contact_list img {
+    width: 100px;
+    max-width: 30%;
+}
 /* ANIMATIONS */
 
 @keyframes fadeIn {
@@ -275,7 +284,7 @@ footer p {
     -webkit-box-shadow: 0px 1px 3px #666666;
     -moz-box-shadow: 0px 1px 3px #666666;
     box-shadow: 0px 1px 3px #666666;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
