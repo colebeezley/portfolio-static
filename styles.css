@@ -17,7 +17,6 @@ p, h2, h3, a, td, li, label {
     color: #000000;
 }
 a:active, a:hover {
-    color: blue;
 }
 
 /* CORE */
@@ -50,20 +49,27 @@ hr {
     border-width: 1px;
 }
 footer {
-    padding-top: 2rem;
-
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+section {
+    margin-top: 2em;
 }
 
 /* CLASS */
 
 .title {
-    padding-top: 10vh;
-    font-size: 170%;
+    margin-top: 10vh;
+    font-size: 250%;
 }
 .intro {
     background-image: url("./assets/mountains.jpg");
-    height: 90vh;
     background-size: cover;
+    background-position: center;
+    height: 90vh;
     margin: 0;
     padding-top: 30vh;
     text-align: center;
@@ -76,13 +82,20 @@ footer {
 
 #nav_list {
     margin: 0;
-    list-style-type: none;
     display: flex;
-    padding: 0 7px;
+    padding: 0;
     justify-content: center;
     line-height: 40px;
     vertical-align: middle;
 }
 #nav_list li {
-    margin: 0 auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid transparent;
+}
+#nav_list li:active, #nav_list li:hover {
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
 }
