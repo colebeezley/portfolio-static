@@ -13,18 +13,19 @@
 <body>
     <nav>
         <ul id="nav_list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="curr_nav active"><a href="#home">Home</a></li>
+            <li class="curr_nav"><a href="#about">About</a></li>
+            <li class="curr_nav"><a href="#projects">Projects</a></li>
+            <li class="curr_nav"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section class="intro">
+    <section class="intro" id="home">
         <h2 class="title">Hi, I'm Cole.</h2>
         <aside><em>A programmer.</em></aside>
+        <a href="#about" id="arrows-href"><img src="./assets/arrows.png" alt="arrows-icon" id="arrows-icon" /></a>
     </section>
     <div class="main">
-        <section class="about">
+        <section class="about" id="about">
             <img src="./assets/stack.png" alt="about-me-icon" />
             <h3>About</h3>
             <p>Hi there, my name is Cole Beezley!</p>
@@ -32,7 +33,7 @@
             <p>I have a Bacheleor's in Computer Science, and I'm always looking to improve my skills.</p>
             <p>Here are some of the projects I'm working on!</p>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <img src="./assets/projects.png" alt="projects-icon" />
             <h3>Projects</h3>
             <table id="projects_table">
@@ -52,7 +53,7 @@
                 </tbody>
             </table>
         </section>
-        <section id="skills">
+        <section id="skills" id="skills">
             <img src="./assets/skills.png" alt="skills-icon" />
             <h3>Skills</h3>
             <table>
@@ -126,8 +127,8 @@
                 </tbody>
             </table>
         </section>
-        <section id="contact">
-            <img src="./assets/contact.png" alt="contact-icon"/>
+        <section class="contact" id="contact">
+            <img src="./assets/contact.png" alt="contact-icon" />
             <form action="mailto:cdbbeezley@gmail.com" method="post" enctype="text/plain" target="_blank">
                 <p>Contact me:</p>
                 <label for="name">Your name:</label>
@@ -152,6 +153,18 @@
             <p class="footer_p">© 2023 Cole Beezley</p>
         </footer>
     </div>
+
+    <script>
+        var header = document.getElementById("nav_list");
+        var btns = header.getElementsByClassName("curr_nav");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
