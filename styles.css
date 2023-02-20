@@ -31,6 +31,7 @@ em,
 th,
 li {
     color: #3a7895;
+    -webkit-tap-highlight-color: transparent
 }
 
 .main {
@@ -105,9 +106,11 @@ img {
     width: 250px;
     max-width: 35%;
 }
+
 input {
     margin: .5rem auto;
 }
+
 footer {
     background-color: #80b9d4;
     margin: 0;
@@ -115,8 +118,21 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 footer p {
     margin-bottom: 0;
+}
+
+em {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
 }
 
 /* CLASS */
@@ -124,6 +140,7 @@ footer p {
 .title {
     margin-top: 10vh;
     font-size: 250%;
+    font-weight: 600;
 }
 
 .intro {
@@ -150,22 +167,27 @@ footer p {
     float: left;
     margin-right: 5%;
 }
+
 #projects img {
     float: right;
     margin-right: 0px;
     margin-left: 5%;
     filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
 }
+
 .description h3 {
     /* text-align: center; */
     margin: 0;
 }
+
 .description p {
     line-height: 1.5;
 }
+
 #about-me-icon {
     border-radius: 100%;
 }
+
 .hr_dots {
     color: rgb(188, 188, 188);
     position: relative;
@@ -175,6 +197,7 @@ footer p {
     border-width: 15px;
     width: 10%;
 }
+
 #contact {
     text-align: center;
 }
@@ -196,7 +219,6 @@ footer p {
     border: 0px solid transparent;
 }
 
-#nav_list li.active,
 #nav_list li:hover {
     border: solid;
     border-width: 0px;
@@ -218,41 +240,55 @@ footer p {
     animation: 3s fadeIn;
     opacity: .7;
 }
+
 #contact h2 {
     padding-bottom: 2rem;
 }
+
 #contact {
     margin-bottom: 10rem;
+    max-width: 100%;
+    width: 1200px;
 }
+
 #contact button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
 }
+
 #contact ul {
-    display: inline-block
+    display: inline-block;
+    margin: 2rem 0;
 }
+
 #contact img {
     width: 150px;
-    max-width: 15%;
+    max-width: 20%;
     filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
+    padding: 0 2vw;
 }
+
 #contact img:hover {
     filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(150%) contrast(92%);
 }
+
 .contact_list {
     text-align: center;
 }
+
 .contact_list li {
     break-inside: avoid;
     display: inline;
     margin: 0 2vw;
 }
+
 .contact_list img {
     width: 100px;
     max-width: 30%;
 }
+
 /* ANIMATIONS */
 
 @keyframes fadeIn {
@@ -268,6 +304,27 @@ footer p {
         opacity: .7;
     }
 }
+
+/* BREAKPOINT */
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+        /* removes navbar for ease of accessibility */
+    }
+    #contact img:hover {
+        filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
+        /* disables mobile brightness acceleration */
+    }
+
+    section {
+        margin: 0 auto;
+        padding: 0 auto;
+        /* reduces unnecessary margins/padding for navigation assistance */
+    }
+    
+}
+
 
 /* BUTTON PRESET */
 
@@ -291,9 +348,9 @@ footer p {
     text-decoration: none;
     border: none;
     cursor: pointer;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #60a9d4;
     background-image: -webkit-linear-gradient(top, #60a9d4, #2595db);
     background-image: -moz-linear-gradient(top, #60a9d4, #2595db);
@@ -301,4 +358,4 @@ footer p {
     background-image: -o-linear-gradient(top, #60a9d4, #2595db);
     background-image: linear-gradient(to bottom, #60a9d4, #2595db);
     text-decoration: none;
-  }
+}
