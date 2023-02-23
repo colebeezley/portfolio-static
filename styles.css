@@ -196,6 +196,7 @@ p {
     border-top: dotted;
     border-width: 15px;
     width: 10%;
+    z-index: -1;
 }
 
 #contact {
