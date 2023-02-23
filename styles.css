@@ -219,7 +219,7 @@ p {
     border: 0px solid transparent;
 }
 
-#nav_list li:hover {
+#nav_list li:hover, #nav_list li.active {
     border: solid;
     border-width: 0px;
     border-radius: 20px;
@@ -316,11 +316,20 @@ p {
         filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
         /* disables mobile brightness acceleration */
     }
+    #contact {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5rem;
+    }
 
-    section {
+    #about {
         margin: 0 auto;
-        padding: 0 auto;
+        padding: 3rem 0;
         /* reduces unnecessary margins/padding for navigation assistance */
+    }
+    #projects {
+        margin: 0 auto;
+        padding: 3rem 0;
     }
     
 }
