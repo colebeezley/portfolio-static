@@ -241,6 +241,13 @@ p {
     animation: 3s fadeIn;
     opacity: .7;
 }
+#error-icon {
+    margin-top: 10%;
+    width: 40px;
+    min-width: 2%;
+    filter: invert(38%) sepia(68%) saturate(354%) hue-rotate(154deg) brightness(97%) contrast(92%);
+    opacity: .7;
+}
 
 #contact h2 {
     padding-bottom: 2rem;
